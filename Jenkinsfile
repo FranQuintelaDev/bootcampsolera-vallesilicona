@@ -9,7 +9,11 @@ pipeline {
         CI = 'true'
     }
     stages {
-        
+        stage('Configure') {
+            steps {
+                sh 'chmod +x ./jenkins/scripts/test.sh'
+            }
+        }
         stage('Build') {
             steps {
                 sh 'npm install'
