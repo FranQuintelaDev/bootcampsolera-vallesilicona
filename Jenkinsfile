@@ -12,6 +12,8 @@ pipeline {
         stage('Configure') {
             steps {
                 sh 'chmod +x ./jenkins/scripts/test.sh'
+                sh 'chmod +x ./jenkins/scripts/deliver.sh'
+                sh 'chmod +x ./jenkins/scripts/kill.sh'
             }
         }
         stage('Build') {
