@@ -24,6 +24,9 @@ pipeline {
         stage('Test') {
             steps {
                 sh './jenkins/scripts/test.sh'
+                withSonarQubeEnv('SonarQube') {
+                    sh "npx sonar-scanner -D sonar.projectKey=React-SonarQube -D sonar.login=b082a592b5caae1791279ed841c00f3d865a24e4"
+                }
             }
         }
         stage('Deliver') {
