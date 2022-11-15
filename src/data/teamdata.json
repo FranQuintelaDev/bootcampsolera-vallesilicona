@@ -74,7 +74,7 @@
         },
         {
           "name": "Ganadores Actividad .Net",
-          "puntos": 10
+          "puntos": 15
         }
       ]
     },
@@ -94,7 +94,7 @@
       "actividades": [
         {
           "name": "Desarrollo Inicial React",
-          "puntos": 40
+          "puntos": 5
         }
       ]
     },
